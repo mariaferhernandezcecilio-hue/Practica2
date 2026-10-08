@@ -17,7 +17,6 @@ public class Practica2 extends JFrame {
 
         JMenuBar menu = new JMenuBar();
 
-        // --- Menú Archivo ---
         JMenu menuA = new JMenu("Archivo");
         JMenuItem nuevo = new JMenuItem("Nuevo");
         JMenuItem consultar = new JMenuItem("Consultar");
@@ -27,14 +26,12 @@ public class Practica2 extends JFrame {
         menuA.add(consultar);
         menuA.add(eliminar);
 
-        // --- Menú Editar ---
         JMenu menuE = new JMenu("Editar");
         JMenu submenu = new JMenu("Modificar");
         JMenuItem opcion = new JMenuItem("Opción 1");
         submenu.add(opcion);
         menuE.add(submenu);
 
-        // --- Menú Reporte ---
         JMenu menuR = new JMenu("Reporte");
         JMenu archivoPdf = new JMenu("Archivo PDF");
         JMenu archivoTxt = new JMenu("Archivo txt");
@@ -42,7 +39,6 @@ public class Practica2 extends JFrame {
         menuR.add(archivoPdf);
         menuR.add(archivoTxt);
 
-        // --- Menú Salir ---
         JMenu menuS = new JMenu("Salir");
 
         menuS.addMenuListener(new javax.swing.event.MenuListener() {
@@ -69,7 +65,7 @@ public class Practica2 extends JFrame {
 
         menu.add(menuA);
         menu.add(menuE);
-        menu.add(menuR); // Corregido: faltaba cerrar el paréntesis
+        menu.add(menuR); 
         menu.add(menuS);
 
         setJMenuBar(menu);
